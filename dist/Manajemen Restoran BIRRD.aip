@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DOCUMENT Type="Advanced Installer" CreateVersion="22.7" version="22.7" Modules="enterprise" RootPath="." Language="en" Id="{621A5832-DA91-460B-B898-4937ABB6D7DA}">
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiPropsComponent">
+    <ROW Property="AI_BITMAP_DISPLAY_MODE" Value="0"/>
+    <ROW Property="ALLUSERS" Value="1"/>
+    <ROW Property="ARPCOMMENTS" Value="This installer database contains the logic and data required to install [|ProductName]." ValueLocId="*"/>
+    <ROW Property="CurrentJavaProductName" Value="CurrentJavaProductName"/>
+    <ROW Property="Manufacturer" Value="Universitas Pamulang"/>
+    <ROW Property="ProductCode" Value="1033:{9F3B2FEE-43C0-4826-A620-35A83F1E620A} " Type="16"/>
+    <ROW Property="ProductLanguage" Value="1033"/>
+    <ROW Property="ProductName" Value="Manajemen Restoran BIRRD"/>
+    <ROW Property="ProductVersion" Value="1.0.0" Options="32"/>
+    <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND"/>
+    <ROW Property="UpgradeCode" Value="{18556072-2F00-420D-9ED6-F532E0CBFF51}"/>
+    <ROW Property="WindowsType9X" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsType9XDisplay" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40" MultiBuildValue="DefaultBuild:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40Display" MultiBuildValue="DefaultBuild:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT50" MultiBuildValue="DefaultBuild:Windows 2000" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT50Display" MultiBuildValue="DefaultBuild:Windows 2000" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT5X" MultiBuildValue="DefaultBuild:Windows XP/2003" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT5XDisplay" MultiBuildValue="DefaultBuild:Windows XP/2003" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT60" MultiBuildValue="DefaultBuild:Windows Vista/Server 2008" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT60Display" MultiBuildValue="DefaultBuild:Windows Vista/Server 2008" ValueLocId="-"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiDirsComponent">
+    <ROW Directory="APPDIR" Directory_Parent="TARGETDIR" DefaultDir="APPDIR:." IsPseudoRoot="1" DirectoryOptions="3"/>
+    <ROW Directory="BIRRManajemenSistem_Dir" Directory_Parent="APPDIR" DefaultDir="BIRRMA~1|BIRRManajemenSistem" DirectoryOptions="3"/>
+    <ROW Directory="MenuMasakan_1_Dir" Directory_Parent="src_Dir" DefaultDir="MENUMA~1|MenuMasakan" DirectoryOptions="3"/>
+    <ROW Directory="MenuMasakan_Dir" Directory_Parent="classes_Dir" DefaultDir="MENUMA~1|MenuMasakan" DirectoryOptions="3"/>
+    <ROW Directory="MenuRegistrasi_1_Dir" Directory_Parent="src_Dir" DefaultDir="MENURE~1|MenuRegistrasi" DirectoryOptions="3"/>
+    <ROW Directory="MenuRegistrasi_Dir" Directory_Parent="classes_Dir" DefaultDir="MENURE~1|MenuRegistrasi" DirectoryOptions="3"/>
+    <ROW Directory="MenuTransaksi_1_Dir" Directory_Parent="src_Dir" DefaultDir="MENUTR~1|MenuTransaksi" DirectoryOptions="3"/>
+    <ROW Directory="MenuTransaksi_Dir" Directory_Parent="classes_Dir" DefaultDir="MENUTR~1|MenuTransaksi" DirectoryOptions="3"/>
+    <ROW Directory="Restoran_BIRRD_1_Dir" Directory_Parent="src_Dir" DefaultDir="RESTOR~1|Restoran_BIRRD" DirectoryOptions="3"/>
+    <ROW Directory="Restoran_BIRRD_Dir" Directory_Parent="classes_Dir" DefaultDir="RESTOR~1|Restoran_BIRRD" DirectoryOptions="3"/>
+    <ROW Directory="SHORTCUTDIR" Directory_Parent="TARGETDIR" DefaultDir="SHORTC~1|SHORTCUTDIR" IsPseudoRoot="1"/>
+    <ROW Directory="TARGETDIR" DefaultDir="SourceDir"/>
+    <ROW Directory="build_Dir" Directory_Parent="BIRRManajemenSistem_Dir" DefaultDir="build" DirectoryOptions="3"/>
+    <ROW Directory="classes_Dir" Directory_Parent="build_Dir" DefaultDir="classes" DirectoryOptions="3"/>
+    <ROW Directory="dist_Dir" Directory_Parent="BIRRManajemenSistem_Dir" DefaultDir="dist" DirectoryOptions="3"/>
+    <ROW Directory="lib_Dir" Directory_Parent="dist_Dir" DefaultDir="lib" DirectoryOptions="3"/>
+    <ROW Directory="nbproject_Dir" Directory_Parent="BIRRManajemenSistem_Dir" DefaultDir="NBPROJ~1|nbproject" DirectoryOptions="3"/>
+    <ROW Directory="private_Dir" Directory_Parent="nbproject_Dir" DefaultDir="private" DirectoryOptions="3"/>
+    <ROW Directory="src_Dir" Directory_Parent="BIRRManajemenSistem_Dir" DefaultDir="src" DirectoryOptions="3"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.SideBySideGuidComponent">
+    <ROW Component="APPDIR" Value="{ED52F046-BFCC-4577-8EA4-99FAA92E7AF2}"/>
+    <ROW Component="ProductInformation" Value="{9A1296DA-7271-4C5C-8293-4848A463874B}"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
+    <ROW Component="APPDIR" ComponentId="{ED52F046-BFCC-4577-8EA4-99FAA92E7AF2}" Directory_="APPDIR" Attributes="0"/>
+    <ROW Component="BIRRDManajemenSistem.jar" ComponentId="{CBD2F96A-4080-45F5-9F76-679ECBA1419A}" Directory_="dist_Dir" Attributes="0" KeyPath="BIRRDManajemenSistem.jar" Type="0"/>
+    <ROW Component="DashboardAdmin.form" ComponentId="{CADEF26B-F084-4B62-8CD0-6205FA338F61}" Directory_="Restoran_BIRRD_1_Dir" Attributes="0" KeyPath="DashboardAdmin.form" Type="0"/>
+    <ROW Component="DashboardAdmin1.class" ComponentId="{756A80E2-4ACC-45E1-BE4A-8BEF20129D5B}" Directory_="Restoran_BIRRD_Dir" Attributes="0" KeyPath="DashboardAdmin1.class" Type="0"/>
+    <ROW Component="DatabaseConnection.class" ComponentId="{F562F8C9-245B-4A46-A175-1EDF371288A7}" Directory_="MenuMasakan_Dir" Attributes="0" KeyPath="DatabaseConnection.class" Type="0"/>
+    <ROW Component="DatabaseConnection.class_1" ComponentId="{22C22DBA-591F-4102-835F-5A54DD0A91EF}" Directory_="MenuRegistrasi_Dir" Attributes="0" KeyPath="DatabaseConnection.class_1" Type="0"/>
+    <ROW Component="DatabaseConnection.class_2" ComponentId="{9FF6F86F-64E2-454A-BF20-787959EF9AF9}" Directory_="MenuTransaksi_Dir" Attributes="0" KeyPath="DatabaseConnection.class_2" Type="0"/>
+    <ROW Component="DatabaseConnection.java" ComponentId="{6B89B138-4D6D-432C-BBA4-8C1FE7472B1F}" Directory_="MenuMasakan_1_Dir" Attributes="0" KeyPath="DatabaseConnection.java" Type="0"/>
+    <ROW Component="DatabaseConnection.java_1" ComponentId="{7D5D8CA0-D1A4-4517-95F2-D98DAEFCB7A8}" Directory_="MenuRegistrasi_1_Dir" Attributes="0" KeyPath="DatabaseConnection.java_1" Type="0"/>
+    <ROW Component="DatabaseConnection.java_2" ComponentId="{00E21B4F-732A-4061-A638-E45157D02815}" Directory_="MenuTransaksi_1_Dir" Attributes="0" KeyPath="DatabaseConnection.java_2" Type="0"/>
+    <ROW Component="ProductInformation" ComponentId="{9A1296DA-7271-4C5C-8293-4848A463874B}" Directory_="APPDIR" Attributes="4" KeyPath="Version"/>
+    <ROW Component="RestoranBIRRD.exe" ComponentId="{21531A4A-146C-4481-A81F-10370BFE2F7D}" Directory_="APPDIR" Attributes="0" KeyPath="RestoranBIRRD.exe"/>
+    <ROW Component="SHORTCUTDIR" ComponentId="{E7F1EB82-332E-497D-96B9-0EE2891709D0}" Directory_="SHORTCUTDIR" Attributes="0"/>
+    <ROW Component="build.xml" ComponentId="{4CC10D01-30C1-478D-98E2-60CD512B905B}" Directory_="BIRRManajemenSistem_Dir" Attributes="0" KeyPath="build.xml" Type="0"/>
+    <ROW Component="buildimpl.xml" ComponentId="{B34D8830-80D7-44C7-95F3-2766DF0378DD}" Directory_="nbproject_Dir" Attributes="0" KeyPath="buildimpl.xml" Type="0"/>
+    <ROW Component="builtjar.properties" ComponentId="{F1F0B47F-13ED-49EB-89C5-DA61E87281B3}" Directory_="build_Dir" Attributes="0" KeyPath="builtjar.properties" Type="0"/>
+    <ROW Component="commonsbeanutils1.8.2.jar" ComponentId="{21C6A042-38CF-43BD-BE00-7176EF76C638}" Directory_="lib_Dir" Attributes="0" KeyPath="commonsbeanutils1.8.2.jar" Type="0"/>
+    <ROW Component="config.properties" ComponentId="{DAFF3A30-9412-4AB8-8D19-E74EFA11A227}" Directory_="private_Dir" Attributes="0" KeyPath="config.properties" Type="0"/>
+    <ROW Component="swinglayout1.0.4.jar" ComponentId="{26B045EA-8CA4-4FF6-AE3E-71C68B034C62}" Directory_="APPDIR" Attributes="0" KeyPath="swinglayout1.0.4.jar" Type="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatsComponent">
+    <ROW Feature="MainFeature" Title="MainFeature" Description="Description" Display="1" Level="1" Directory_="APPDIR" Attributes="0"/>
+    <ATTRIBUTE name="CurrentFeature" value="MainFeature"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFilesComponent">
+    <ROW File="builtjar.properties" Component_="builtjar.properties" FileName="BUILT-~1.PRO|built-jar.properties" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\build\built-jar.properties" SelfReg="false"/>
+    <ROW File="DatabaseConnection.class" Component_="DatabaseConnection.class" FileName="DATABA~1.CLA|DatabaseConnection.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\build\classes\MenuMasakan\DatabaseConnection.class" SelfReg="false"/>
+    <ROW File="MenuMasakan1.class" Component_="DatabaseConnection.class" FileName="MENUMA~1.CLA|MenuMasakan$1.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\build\classes\MenuMasakan\MenuMasakan$1.class" SelfReg="false"/>
+    <ROW File="MenuMasakan10.class" Component_="DatabaseConnection.class" FileName="MENUMA~2.CLA|MenuMasakan$10.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\build\classes\MenuMasakan\MenuMasakan$10.class" SelfReg="false"/>
+    <ROW File="MenuMasakan2.class" Component_="DatabaseConnection.class" FileName="MENUMA~3.CLA|MenuMasakan$2.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\build\classes\MenuMasakan\MenuMasakan$2.class" SelfReg="false"/>
+    <ROW File="MenuMasakan3.class" Component_="DatabaseConnection.class" FileName="MENUMA~4.CLA|MenuMasakan$3.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\build\classes\MenuMasakan\MenuMasakan$3.class" SelfReg="false"/>
+    <ROW File="MenuMasakan4.class" Component_="DatabaseConnection.class" FileName="MENUMA~5.CLA|MenuMasakan$4.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\build\classes\MenuMasakan\MenuMasakan$4.class" SelfReg="false"/>
+    <ROW File="MenuMasakan5.class" Component_="DatabaseConnection.class" FileName="MENUMA~6.CLA|MenuMasakan$5.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\build\classes\MenuMasakan\MenuMasakan$5.class" SelfReg="false"/>
+    <ROW File="MenuMasakan6.class" Component_="DatabaseConnection.class" FileName="MENUMA~7.CLA|MenuMasakan$6.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\build\classes\MenuMasakan\MenuMasakan$6.class" SelfReg="false"/>
+    <ROW File="MenuMasakan7.class" Component_="DatabaseConnection.class" FileName="MENUMA~8.CLA|MenuMasakan$7.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\build\classes\MenuMasakan\MenuMasakan$7.class" SelfReg="false"/>
+    <ROW File="MenuMasakan8.class" Component_="DatabaseConnection.class" FileName="MENUMA~9.CLA|MenuMasakan$8.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\build\classes\MenuMasakan\MenuMasakan$8.class" SelfReg="false"/>
+    <ROW File="MenuMasakan9.class" Component_="DatabaseConnection.class" FileName="MENUM~10.CLA|MenuMasakan$9.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\build\classes\MenuMasakan\MenuMasakan$9.class" SelfReg="false"/>
+    <ROW File="MenuMasakanmasakan.class" Component_="DatabaseConnection.class" FileName="MENUM~11.CLA|MenuMasakan$masakan.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\build\classes\MenuMasakan\MenuMasakan$masakan.class" SelfReg="false"/>
+    <ROW File="MenuMasakan.class" Component_="DatabaseConnection.class" FileName="MENUM~12.CLA|MenuMasakan.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\build\classes\MenuMasakan\MenuMasakan.class" SelfReg="false"/>
+    <ROW File="MenuMasakanAdm1.class" Component_="DatabaseConnection.class" FileName="MENUM~13.CLA|MenuMasakanAdm$1.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\build\classes\MenuMasakan\MenuMasakanAdm$1.class" SelfReg="false"/>
+    <ROW File="MenuMasakanAdm10.class" Component_="DatabaseConnection.class" FileName="MENUM~14.CLA|MenuMasakanAdm$10.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\build\classes\MenuMasakan\MenuMasakanAdm$10.class" SelfReg="false"/>
+    <ROW File="MenuMasakanAdm2.class" Component_="DatabaseConnection.class" FileName="MENUM~15.CLA|MenuMasakanAdm$2.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\build\classes\MenuMasakan\MenuMasakanAdm$2.class" SelfReg="false"/>
+    <ROW File="MenuMasakanAdm3.class" Component_="DatabaseConnection.class" FileName="MENUM~16.CLA|MenuMasakanAdm$3.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\build\classes\MenuMasakan\MenuMasakanAdm$3.class" SelfReg="false"/>
+    <ROW File="MenuMasakanAdm4.class" Component_="DatabaseConnection.class" FileName="MENUM~17.CLA|MenuMasakanAdm$4.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\build\classes\MenuMasakan\MenuMasakanAdm$4.class" SelfReg="false"/>
+    <ROW File="MenuMasakanAdm5.class" Component_="DatabaseConnection.class" FileName="MENUM~18.CLA|MenuMasakanAdm$5.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\build\classes\MenuMasakan\MenuMasakanAdm$5.class" SelfReg="false"/>
+    <ROW File="MenuMasakanAdm6.class" Component_="DatabaseConnection.class" FileName="MENUM~19.CLA|MenuMasakanAdm$6.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\build\classes\MenuMasakan\MenuMasakanAdm$6.class" SelfReg="false"/>
+    <ROW File="MenuMasakanAdm7.class" Component_="DatabaseConnection.class" FileName="MENUM~20.CLA|MenuMasakanAdm$7.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\build\classes\MenuMasakan\MenuMasakanAdm$7.class" SelfReg="false"/>
+    <ROW File="MenuMasakanAdm8.class" Component_="DatabaseConnection.class" FileName="MENUM~21.CLA|MenuMasakanAdm$8.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\build\classes\MenuMasakan\MenuMasakanAdm$8.class" SelfReg="false"/>
+    <ROW File="MenuMasakanAdm9.class" Component_="DatabaseConnection.class" FileName="MENUM~22.CLA|MenuMasakanAdm$9.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\build\classes\MenuMasakan\MenuMasakanAdm$9.class" SelfReg="false"/>
+    <ROW File="MenuMasakanAdmmasakan.class" Component_="DatabaseConnection.class" FileName="MENUM~23.CLA|MenuMasakanAdm$masakan.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\build\classes\MenuMasakan\MenuMasakanAdm$masakan.class" SelfReg="false"/>
+    <ROW File="MenuMasakanAdm.class" Component_="DatabaseConnection.class" FileName="MENUM~24.CLA|MenuMasakanAdm.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\build\classes\MenuMasakan\MenuMasakanAdm.class" SelfReg="false"/>
+    <ROW File="DatabaseConnection.class_1" Component_="DatabaseConnection.class_1" FileName="DATABA~1.CLA|DatabaseConnection.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\build\classes\MenuRegistrasi\DatabaseConnection.class" SelfReg="false"/>
+    <ROW File="MenuRegistrasi1.class" Component_="DatabaseConnection.class_1" FileName="MENURE~1.CLA|MenuRegistrasi$1.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\build\classes\MenuRegistrasi\MenuRegistrasi$1.class" SelfReg="false"/>
+    <ROW File="MenuRegistrasi10.class" Component_="DatabaseConnection.class_1" FileName="MENURE~2.CLA|MenuRegistrasi$10.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\build\classes\MenuRegistrasi\MenuRegistrasi$10.class" SelfReg="false"/>
+    <ROW File="MenuRegistrasi11.class" Component_="DatabaseConnection.class_1" FileName="MENURE~3.CLA|MenuRegistrasi$11.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\build\classes\MenuRegistrasi\MenuRegistrasi$11.class" SelfReg="false"/>
+    <ROW File="MenuRegistrasi2.class" Component_="DatabaseConnection.class_1" FileName="MENURE~4.CLA|MenuRegistrasi$2.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\build\classes\MenuRegistrasi\MenuRegistrasi$2.class" SelfReg="false"/>
+    <ROW File="MenuRegistrasi3.class" Component_="DatabaseConnection.class_1" FileName="MENURE~5.CLA|MenuRegistrasi$3.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\build\classes\MenuRegistrasi\MenuRegistrasi$3.class" SelfReg="false"/>
+    <ROW File="MenuRegistrasi4.class" Component_="DatabaseConnection.class_1" FileName="MENURE~6.CLA|MenuRegistrasi$4.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\build\classes\MenuRegistrasi\MenuRegistrasi$4.class" SelfReg="false"/>
+    <ROW File="MenuRegistrasi5.class" Component_="DatabaseConnection.class_1" FileName="MENURE~7.CLA|MenuRegistrasi$5.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\build\classes\MenuRegistrasi\MenuRegistrasi$5.class" SelfReg="false"/>
+    <ROW File="MenuRegistrasi6.class" Component_="DatabaseConnection.class_1" FileName="MENURE~8.CLA|MenuRegistrasi$6.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\build\classes\MenuRegistrasi\MenuRegistrasi$6.class" SelfReg="false"/>
+    <ROW File="MenuRegistrasi7.class" Component_="DatabaseConnection.class_1" FileName="MENURE~9.CLA|MenuRegistrasi$7.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\build\classes\MenuRegistrasi\MenuRegistrasi$7.class" SelfReg="false"/>
+    <ROW File="MenuRegistrasi8.class" Component_="DatabaseConnection.class_1" FileName="MENUR~10.CLA|MenuRegistrasi$8.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\build\classes\MenuRegistrasi\MenuRegistrasi$8.class" SelfReg="false"/>
+    <ROW File="MenuRegistrasi9.class" Component_="DatabaseConnection.class_1" FileName="MENUR~11.CLA|MenuRegistrasi$9.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\build\classes\MenuRegistrasi\MenuRegistrasi$9.class" SelfReg="false"/>
+    <ROW File="MenuRegistrasiuser.class" Component_="DatabaseConnection.class_1" FileName="MENUR~12.CLA|MenuRegistrasi$user.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\build\classes\MenuRegistrasi\MenuRegistrasi$user.class" SelfReg="false"/>
+    <ROW File="MenuRegistrasi.class" Component_="DatabaseConnection.class_1" FileName="MENUR~13.CLA|MenuRegistrasi.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\build\classes\MenuRegistrasi\MenuRegistrasi.class" SelfReg="false"/>
+    <ROW File="DatabaseConnection.class_2" Component_="DatabaseConnection.class_2" FileName="DATABA~1.CLA|DatabaseConnection.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\build\classes\MenuTransaksi\DatabaseConnection.class" SelfReg="false"/>
+    <ROW File="MenuTransaksi1.class" Component_="DatabaseConnection.class_2" FileName="MENUTR~1.CLA|MenuTransaksi$1.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\build\classes\MenuTransaksi\MenuTransaksi$1.class" SelfReg="false"/>
+    <ROW File="MenuTransaksi10.class" Component_="DatabaseConnection.class_2" FileName="MENUTR~2.CLA|MenuTransaksi$10.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\build\classes\MenuTransaksi\MenuTransaksi$10.class" SelfReg="false"/>
+    <ROW File="MenuTransaksi11.class" Component_="DatabaseConnection.class_2" FileName="MENUTR~3.CLA|MenuTransaksi$11.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\build\classes\MenuTransaksi\MenuTransaksi$11.class" SelfReg="false"/>
+    <ROW File="MenuTransaksi12.class" Component_="DatabaseConnection.class_2" FileName="MENUTR~4.CLA|MenuTransaksi$12.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\build\classes\MenuTransaksi\MenuTransaksi$12.class" SelfReg="false"/>
+    <ROW File="MenuTransaksi13.class" Component_="DatabaseConnection.class_2" FileName="MENUTR~5.CLA|MenuTransaksi$13.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\build\classes\MenuTransaksi\MenuTransaksi$13.class" SelfReg="false"/>
+    <ROW File="MenuTransaksi2.class" Component_="DatabaseConnection.class_2" FileName="MENUTR~6.CLA|MenuTransaksi$2.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\build\classes\MenuTransaksi\MenuTransaksi$2.class" SelfReg="false"/>
+    <ROW File="MenuTransaksi3.class" Component_="DatabaseConnection.class_2" FileName="MENUTR~7.CLA|MenuTransaksi$3.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\build\classes\MenuTransaksi\MenuTransaksi$3.class" SelfReg="false"/>
+    <ROW File="MenuTransaksi4.class" Component_="DatabaseConnection.class_2" FileName="MENUTR~8.CLA|MenuTransaksi$4.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\build\classes\MenuTransaksi\MenuTransaksi$4.class" SelfReg="false"/>
+    <ROW File="MenuTransaksi5.class" Component_="DatabaseConnection.class_2" FileName="MENUTR~9.CLA|MenuTransaksi$5.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\build\classes\MenuTransaksi\MenuTransaksi$5.class" SelfReg="false"/>
+    <ROW File="MenuTransaksi6.class" Component_="DatabaseConnection.class_2" FileName="MENUT~10.CLA|MenuTransaksi$6.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\build\classes\MenuTransaksi\MenuTransaksi$6.class" SelfReg="false"/>
+    <ROW File="MenuTransaksi7.class" Component_="DatabaseConnection.class_2" FileName="MENUT~11.CLA|MenuTransaksi$7.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\build\classes\MenuTransaksi\MenuTransaksi$7.class" SelfReg="false"/>
+    <ROW File="MenuTransaksi8.class" Component_="DatabaseConnection.class_2" FileName="MENUT~12.CLA|MenuTransaksi$8.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\build\classes\MenuTransaksi\MenuTransaksi$8.class" SelfReg="false"/>
+    <ROW File="MenuTransaksi9.class" Component_="DatabaseConnection.class_2" FileName="MENUT~13.CLA|MenuTransaksi$9.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\build\classes\MenuTransaksi\MenuTransaksi$9.class" SelfReg="false"/>
+    <ROW File="MenuTransaksitransaksi.class" Component_="DatabaseConnection.class_2" FileName="MENUT~14.CLA|MenuTransaksi$transaksi.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\build\classes\MenuTransaksi\MenuTransaksi$transaksi.class" SelfReg="false"/>
+    <ROW File="MenuTransaksi.class" Component_="DatabaseConnection.class_2" FileName="MENUT~15.CLA|MenuTransaksi.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\build\classes\MenuTransaksi\MenuTransaksi.class" SelfReg="false"/>
+    <ROW File="RiwayatTransaksi1.class" Component_="DatabaseConnection.class_2" FileName="RIWAYA~1.CLA|RiwayatTransaksi$1.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\build\classes\MenuTransaksi\RiwayatTransaksi$1.class" SelfReg="false"/>
+    <ROW File="RiwayatTransaksi10.class" Component_="DatabaseConnection.class_2" FileName="RIWAYA~2.CLA|RiwayatTransaksi$10.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\build\classes\MenuTransaksi\RiwayatTransaksi$10.class" SelfReg="false"/>
+    <ROW File="RiwayatTransaksi11.class" Component_="DatabaseConnection.class_2" FileName="RIWAYA~3.CLA|RiwayatTransaksi$11.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\build\classes\MenuTransaksi\RiwayatTransaksi$11.class" SelfReg="false"/>
+    <ROW File="RiwayatTransaksi12.class" Component_="DatabaseConnection.class_2" FileName="RIWAYA~4.CLA|RiwayatTransaksi$12.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\build\classes\MenuTransaksi\RiwayatTransaksi$12.class" SelfReg="false"/>
+    <ROW File="RiwayatTransaksi13.class" Component_="DatabaseConnection.class_2" FileName="RIWAYA~5.CLA|RiwayatTransaksi$13.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\build\classes\MenuTransaksi\RiwayatTransaksi$13.class" SelfReg="false"/>
+    <ROW File="RiwayatTransaksi2.class" Component_="DatabaseConnection.class_2" FileName="RIWAYA~6.CLA|RiwayatTransaksi$2.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\build\classes\MenuTransaksi\RiwayatTransaksi$2.class" SelfReg="false"/>
+    <ROW File="RiwayatTransaksi3.class" Component_="DatabaseConnection.class_2" FileName="RIWAYA~7.CLA|RiwayatTransaksi$3.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\build\classes\MenuTransaksi\RiwayatTransaksi$3.class" SelfReg="false"/>
+    <ROW File="RiwayatTransaksi4.class" Component_="DatabaseConnection.class_2" FileName="RIWAYA~8.CLA|RiwayatTransaksi$4.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\build\classes\MenuTransaksi\RiwayatTransaksi$4.class" SelfReg="false"/>
+    <ROW File="RiwayatTransaksi5.class" Component_="DatabaseConnection.class_2" FileName="RIWAYA~9.CLA|RiwayatTransaksi$5.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\build\classes\MenuTransaksi\RiwayatTransaksi$5.class" SelfReg="false"/>
+    <ROW File="RiwayatTransaksi6.class" Component_="DatabaseConnection.class_2" FileName="RIWAY~10.CLA|RiwayatTransaksi$6.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\build\classes\MenuTransaksi\RiwayatTransaksi$6.class" SelfReg="false"/>
+    <ROW File="RiwayatTransaksi7.class" Component_="DatabaseConnection.class_2" FileName="RIWAY~11.CLA|RiwayatTransaksi$7.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\build\classes\MenuTransaksi\RiwayatTransaksi$7.class" SelfReg="false"/>
+    <ROW File="RiwayatTransaksi8.class" Component_="DatabaseConnection.class_2" FileName="RIWAY~12.CLA|RiwayatTransaksi$8.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\build\classes\MenuTransaksi\RiwayatTransaksi$8.class" SelfReg="false"/>
+    <ROW File="RiwayatTransaksi9.class" Component_="DatabaseConnection.class_2" FileName="RIWAY~13.CLA|RiwayatTransaksi$9.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\build\classes\MenuTransaksi\RiwayatTransaksi$9.class" SelfReg="false"/>
+    <ROW File="RiwayatTransaksi.class" Component_="DatabaseConnection.class_2" FileName="RIWAY~14.CLA|RiwayatTransaksi.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\build\classes\MenuTransaksi\RiwayatTransaksi.class" SelfReg="false"/>
+    <ROW File="RiwayatTransaksiMan1.class" Component_="DatabaseConnection.class_2" FileName="RIWAY~15.CLA|RiwayatTransaksiMan$1.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\build\classes\MenuTransaksi\RiwayatTransaksiMan$1.class" SelfReg="false"/>
+    <ROW File="RiwayatTransaksiMan10.class" Component_="DatabaseConnection.class_2" FileName="RIWAY~16.CLA|RiwayatTransaksiMan$10.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\build\classes\MenuTransaksi\RiwayatTransaksiMan$10.class" SelfReg="false"/>
+    <ROW File="RiwayatTransaksiMan11.class" Component_="DatabaseConnection.class_2" FileName="RIWAY~17.CLA|RiwayatTransaksiMan$11.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\build\classes\MenuTransaksi\RiwayatTransaksiMan$11.class" SelfReg="false"/>
+    <ROW File="RiwayatTransaksiMan12.class" Component_="DatabaseConnection.class_2" FileName="RIWAY~18.CLA|RiwayatTransaksiMan$12.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\build\classes\MenuTransaksi\RiwayatTransaksiMan$12.class" SelfReg="false"/>
+    <ROW File="RiwayatTransaksiMan2.class" Component_="DatabaseConnection.class_2" FileName="RIWAY~19.CLA|RiwayatTransaksiMan$2.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\build\classes\MenuTransaksi\RiwayatTransaksiMan$2.class" SelfReg="false"/>
+    <ROW File="RiwayatTransaksiMan3.class" Component_="DatabaseConnection.class_2" FileName="RIWAY~20.CLA|RiwayatTransaksiMan$3.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\build\classes\MenuTransaksi\RiwayatTransaksiMan$3.class" SelfReg="false"/>
+    <ROW File="RiwayatTransaksiMan4.class" Component_="DatabaseConnection.class_2" FileName="RIWAY~21.CLA|RiwayatTransaksiMan$4.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\build\classes\MenuTransaksi\RiwayatTransaksiMan$4.class" SelfReg="false"/>
+    <ROW File="RiwayatTransaksiMan5.class" Component_="DatabaseConnection.class_2" FileName="RIWAY~22.CLA|RiwayatTransaksiMan$5.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\build\classes\MenuTransaksi\RiwayatTransaksiMan$5.class" SelfReg="false"/>
+    <ROW File="RiwayatTransaksiMan6.class" Component_="DatabaseConnection.class_2" FileName="RIWAY~23.CLA|RiwayatTransaksiMan$6.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\build\classes\MenuTransaksi\RiwayatTransaksiMan$6.class" SelfReg="false"/>
+    <ROW File="RiwayatTransaksiMan7.class" Component_="DatabaseConnection.class_2" FileName="RIWAY~24.CLA|RiwayatTransaksiMan$7.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\build\classes\MenuTransaksi\RiwayatTransaksiMan$7.class" SelfReg="false"/>
+    <ROW File="RiwayatTransaksiMan8.class" Component_="DatabaseConnection.class_2" FileName="RIWAY~25.CLA|RiwayatTransaksiMan$8.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\build\classes\MenuTransaksi\RiwayatTransaksiMan$8.class" SelfReg="false"/>
+    <ROW File="RiwayatTransaksiMan9.class" Component_="DatabaseConnection.class_2" FileName="RIWAY~26.CLA|RiwayatTransaksiMan$9.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\build\classes\MenuTransaksi\RiwayatTransaksiMan$9.class" SelfReg="false"/>
+    <ROW File="RiwayatTransaksiMan.class" Component_="DatabaseConnection.class_2" FileName="RIWAY~27.CLA|RiwayatTransaksiMan.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\build\classes\MenuTransaksi\RiwayatTransaksiMan.class" SelfReg="false"/>
+    <ROW File="DashboardAdmin1.class" Component_="DashboardAdmin1.class" FileName="DASHBO~1.CLA|DashboardAdmin$1.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\build\classes\Restoran_BIRRD\DashboardAdmin$1.class" SelfReg="false"/>
+    <ROW File="DashboardAdmin2.class" Component_="DashboardAdmin1.class" FileName="DASHBO~2.CLA|DashboardAdmin$2.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\build\classes\Restoran_BIRRD\DashboardAdmin$2.class" SelfReg="false"/>
+    <ROW File="DashboardAdmin3.class" Component_="DashboardAdmin1.class" FileName="DASHBO~3.CLA|DashboardAdmin$3.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\build\classes\Restoran_BIRRD\DashboardAdmin$3.class" SelfReg="false"/>
+    <ROW File="DashboardAdmin4.class" Component_="DashboardAdmin1.class" FileName="DASHBO~4.CLA|DashboardAdmin$4.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\build\classes\Restoran_BIRRD\DashboardAdmin$4.class" SelfReg="false"/>
+    <ROW File="DashboardAdmin.class" Component_="DashboardAdmin1.class" FileName="DASHBO~5.CLA|DashboardAdmin.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\build\classes\Restoran_BIRRD\DashboardAdmin.class" SelfReg="false"/>
+    <ROW File="DashboardKasir1.class" Component_="DashboardAdmin1.class" FileName="DASHBO~6.CLA|DashboardKasir$1.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\build\classes\Restoran_BIRRD\DashboardKasir$1.class" SelfReg="false"/>
+    <ROW File="DashboardKasir2.class" Component_="DashboardAdmin1.class" FileName="DASHBO~7.CLA|DashboardKasir$2.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\build\classes\Restoran_BIRRD\DashboardKasir$2.class" SelfReg="false"/>
+    <ROW File="DashboardKasir3.class" Component_="DashboardAdmin1.class" FileName="DASHBO~8.CLA|DashboardKasir$3.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\build\classes\Restoran_BIRRD\DashboardKasir$3.class" SelfReg="false"/>
+    <ROW File="DashboardKasir4.class" Component_="DashboardAdmin1.class" FileName="DASHBO~9.CLA|DashboardKasir$4.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\build\classes\Restoran_BIRRD\DashboardKasir$4.class" SelfReg="false"/>
+    <ROW File="DashboardKasir5.class" Component_="DashboardAdmin1.class" FileName="DASHB~10.CLA|DashboardKasir$5.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\build\classes\Restoran_BIRRD\DashboardKasir$5.class" SelfReg="false"/>
+    <ROW File="DashboardKasir.class" Component_="DashboardAdmin1.class" FileName="DASHB~11.CLA|DashboardKasir.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\build\classes\Restoran_BIRRD\DashboardKasir.class" SelfReg="false"/>
+    <ROW File="DashboardManajer1.class" Component_="DashboardAdmin1.class" FileName="DASHB~12.CLA|DashboardManajer$1.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\build\classes\Restoran_BIRRD\DashboardManajer$1.class" SelfReg="false"/>
+    <ROW File="DashboardManajer2.class" Component_="DashboardAdmin1.class" FileName="DASHB~13.CLA|DashboardManajer$2.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\build\classes\Restoran_BIRRD\DashboardManajer$2.class" SelfReg="false"/>
+    <ROW File="DashboardManajer3.class" Component_="DashboardAdmin1.class" FileName="DASHB~14.CLA|DashboardManajer$3.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\build\classes\Restoran_BIRRD\DashboardManajer$3.class" SelfReg="false"/>
+    <ROW File="DashboardManajer4.class" Component_="DashboardAdmin1.class" FileName="DASHB~15.CLA|DashboardManajer$4.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\build\classes\Restoran_BIRRD\DashboardManajer$4.class" SelfReg="false"/>
+    <ROW File="DashboardManajer.class" Component_="DashboardAdmin1.class" FileName="DASHB~16.CLA|DashboardManajer.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\build\classes\Restoran_BIRRD\DashboardManajer.class" SelfReg="false"/>
+    <ROW File="DatabaseConnection.class_3" Component_="DashboardAdmin1.class" FileName="DATABA~1.CLA|DatabaseConnection.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\build\classes\Restoran_BIRRD\DatabaseConnection.class" SelfReg="false"/>
+    <ROW File="HashUtil.class" Component_="DashboardAdmin1.class" FileName="HASHUT~1.CLA|HashUtil.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\build\classes\Restoran_BIRRD\HashUtil.class" SelfReg="false"/>
+    <ROW File="Login1.class" Component_="DashboardAdmin1.class" FileName="LOGIN$~1.CLA|Login$1.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\build\classes\Restoran_BIRRD\Login$1.class" SelfReg="false"/>
+    <ROW File="Login2.class" Component_="DashboardAdmin1.class" FileName="LOGIN$~2.CLA|Login$2.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\build\classes\Restoran_BIRRD\Login$2.class" SelfReg="false"/>
+    <ROW File="Login3.class" Component_="DashboardAdmin1.class" FileName="LOGIN$~3.CLA|Login$3.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\build\classes\Restoran_BIRRD\Login$3.class" SelfReg="false"/>
+    <ROW File="Loginuser.class" Component_="DashboardAdmin1.class" FileName="LOGIN$~4.CLA|Login$user.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\build\classes\Restoran_BIRRD\Login$user.class" SelfReg="false"/>
+    <ROW File="Login.class" Component_="DashboardAdmin1.class" FileName="LOGIN~1.CLA|Login.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\build\classes\Restoran_BIRRD\Login.class" SelfReg="false"/>
+    <ROW File="RestoranBIRR.class" Component_="DashboardAdmin1.class" FileName="RESTOR~1.CLA|RestoranBIRR.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\build\classes\Restoran_BIRRD\RestoranBIRR.class" SelfReg="false"/>
+    <ROW File="build.xml" Component_="build.xml" FileName="build.xml" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\build.xml" SelfReg="false"/>
+    <ROW File="BIRRDManajemenSistem.jar" Component_="BIRRDManajemenSistem.jar" FileName="BIRRDM~1.JAR|BIRRDManajemenSistem.jar" Version="65535.65535.65535.65535" Attributes="0" SourcePath="BIRRDManajemenSistem.jar" SelfReg="false"/>
+    <ROW File="commonsbeanutils1.8.2.jar" Component_="commonsbeanutils1.8.2.jar" FileName="COMMON~1.JAR|commons-beanutils-1.8.2.jar" Version="65535.65535.65535.65535" Attributes="0" SourcePath="lib\commons-beanutils-1.8.2.jar" SelfReg="false"/>
+    <ROW File="commonscollections3.2.1.jar" Component_="commonsbeanutils1.8.2.jar" FileName="COMMON~2.JAR|commons-collections-3.2.1.jar" Version="65535.65535.65535.65535" Attributes="0" SourcePath="lib\commons-collections-3.2.1.jar" SelfReg="false"/>
+    <ROW File="commonsdigester2.1.jar" Component_="commonsbeanutils1.8.2.jar" FileName="COMMON~3.JAR|commons-digester-2.1.jar" Version="65535.65535.65535.65535" Attributes="0" SourcePath="lib\commons-digester-2.1.jar" SelfReg="false"/>
+    <ROW File="commonslogging1.1.jar" Component_="commonsbeanutils1.8.2.jar" FileName="COMMON~4.JAR|commons-logging-1.1.jar" Version="65535.65535.65535.65535" Attributes="0" SourcePath="lib\commons-logging-1.1.jar" SelfReg="false"/>
+    <ROW File="groovyall2.0.1.jar" Component_="commonsbeanutils1.8.2.jar" FileName="GROOVY~1.JAR|groovy-all-2.0.1.jar" Version="65535.65535.65535.65535" Attributes="0" SourcePath="lib\groovy-all-2.0.1.jar" SelfReg="false"/>
+    <ROW File="iText2.1.7.js2.jar" Component_="commonsbeanutils1.8.2.jar" FileName="ITEXT-~1.JAR|iText-2.1.7.js2.jar" Version="65535.65535.65535.65535" Attributes="0" SourcePath="lib\iText-2.1.7.js2.jar" SelfReg="false"/>
+    <ROW File="jasperreports5.6.0.jar" Component_="commonsbeanutils1.8.2.jar" FileName="JASPER~1.JAR|jasperreports-5.6.0.jar" Version="65535.65535.65535.65535" Attributes="0" SourcePath="lib\jasperreports-5.6.0.jar" SelfReg="false"/>
+    <ROW File="jasperreportsfonts5.6.0.jar" Component_="commonsbeanutils1.8.2.jar" FileName="JASPER~2.JAR|jasperreports-fonts-5.6.0.jar" Version="65535.65535.65535.65535" Attributes="0" SourcePath="lib\jasperreports-fonts-5.6.0.jar" SelfReg="false"/>
+    <ROW File="jcalendar1.3.2.jar" Component_="commonsbeanutils1.8.2.jar" FileName="JCALEN~1.JAR|jcalendar-1.3.2.jar" Version="65535.65535.65535.65535" Attributes="0" SourcePath="lib\jcalendar-1.3.2.jar" SelfReg="false"/>
+    <ROW File="jcalendar1.3.2.jar.zip" Component_="commonsbeanutils1.8.2.jar" FileName="JCALEN~1.ZIP|jcalendar-1.3.2.jar.zip" Version="65535.65535.65535.65535" Attributes="0" SourcePath="lib\jcalendar-1.3.2.jar.zip" SelfReg="false"/>
+    <ROW File="mysqlconnectorj9.3.0.jar" Component_="commonsbeanutils1.8.2.jar" FileName="MYSQL-~1.JAR|mysql-connector-j-9.3.0.jar" Version="65535.65535.65535.65535" Attributes="0" SourcePath="lib\mysql-connector-j-9.3.0.jar" SelfReg="false"/>
+    <ROW File="mysqlconnectorjava5.1.23bin.jar" Component_="commonsbeanutils1.8.2.jar" FileName="MYSQL-~2.JAR|mysql-connector-java-5.1.23-bin.jar" Version="65535.65535.65535.65535" Attributes="0" SourcePath="lib\mysql-connector-java-5.1.23-bin.jar" SelfReg="false"/>
+    <ROW File="orgjdesktoplayout.jar" Component_="commonsbeanutils1.8.2.jar" FileName="ORG-JD~1.JAR|org-jdesktop-layout.jar" Version="65535.65535.65535.65535" Attributes="0" SourcePath="lib\org-jdesktop-layout.jar" SelfReg="false"/>
+    <ROW File="README.TXT" Component_="BIRRDManajemenSistem.jar" FileName="README.TXT" Version="65535.65535.65535.65535" Attributes="0" SourcePath="README.TXT" SelfReg="false"/>
+    <ROW File="manifest.mf" Component_="build.xml" FileName="manifest.mf" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\manifest.mf" SelfReg="false"/>
+    <ROW File="buildimpl.xml" Component_="buildimpl.xml" FileName="BUILD-~1.XML|build-impl.xml" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\nbproject\build-impl.xml" SelfReg="false"/>
+    <ROW File="genfiles.properties" Component_="buildimpl.xml" FileName="GENFIL~1.PRO|genfiles.properties" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\nbproject\genfiles.properties" SelfReg="false"/>
+    <ROW File="config.properties" Component_="config.properties" FileName="CONFIG~1.PRO|config.properties" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\nbproject\private\config.properties" SelfReg="false"/>
+    <ROW File="private.properties" Component_="config.properties" FileName="PRIVAT~1.PRO|private.properties" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\nbproject\private\private.properties" SelfReg="false"/>
+    <ROW File="private.xml" Component_="config.properties" FileName="private.xml" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\nbproject\private\private.xml" SelfReg="false"/>
+    <ROW File="project.properties" Component_="buildimpl.xml" FileName="PROJEC~1.PRO|project.properties" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\nbproject\project.properties" SelfReg="false"/>
+    <ROW File="project.xml" Component_="buildimpl.xml" FileName="project.xml" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\nbproject\project.xml" SelfReg="false"/>
+    <ROW File="DatabaseConnection.java" Component_="DatabaseConnection.java" FileName="DATABA~1.JAV|DatabaseConnection.java" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\src\MenuMasakan\DatabaseConnection.java" SelfReg="false"/>
+    <ROW File="MenuMasakan.form" Component_="DatabaseConnection.java" FileName="MENUMA~1.FOR|MenuMasakan.form" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\src\MenuMasakan\MenuMasakan.form" SelfReg="false"/>
+    <ROW File="MenuMasakan.java" Component_="DatabaseConnection.java" FileName="MENUMA~1.JAV|MenuMasakan.java" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\src\MenuMasakan\MenuMasakan.java" SelfReg="false"/>
+    <ROW File="MenuMasakanAdm.form" Component_="DatabaseConnection.java" FileName="MENUMA~2.FOR|MenuMasakanAdm.form" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\src\MenuMasakan\MenuMasakanAdm.form" SelfReg="false"/>
+    <ROW File="MenuMasakanAdm.java" Component_="DatabaseConnection.java" FileName="MENUMA~2.JAV|MenuMasakanAdm.java" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\src\MenuMasakan\MenuMasakanAdm.java" SelfReg="false"/>
+    <ROW File="DatabaseConnection.java_1" Component_="DatabaseConnection.java_1" FileName="DATABA~1.JAV|DatabaseConnection.java" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\src\MenuRegistrasi\DatabaseConnection.java" SelfReg="false"/>
+    <ROW File="MenuRegistrasi.form" Component_="DatabaseConnection.java_1" FileName="MENURE~1.FOR|MenuRegistrasi.form" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\src\MenuRegistrasi\MenuRegistrasi.form" SelfReg="false"/>
+    <ROW File="MenuRegistrasi.java" Component_="DatabaseConnection.java_1" FileName="MENURE~1.JAV|MenuRegistrasi.java" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\src\MenuRegistrasi\MenuRegistrasi.java" SelfReg="false"/>
+    <ROW File="DatabaseConnection.java_2" Component_="DatabaseConnection.java_2" FileName="DATABA~1.JAV|DatabaseConnection.java" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\src\MenuTransaksi\DatabaseConnection.java" SelfReg="false"/>
+    <ROW File="MenuTransaksi.form" Component_="DatabaseConnection.java_2" FileName="MENUTR~1.FOR|MenuTransaksi.form" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\src\MenuTransaksi\MenuTransaksi.form" SelfReg="false"/>
+    <ROW File="MenuTransaksi.java" Component_="DatabaseConnection.java_2" FileName="MENUTR~1.JAV|MenuTransaksi.java" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\src\MenuTransaksi\MenuTransaksi.java" SelfReg="false"/>
+    <ROW File="RiwayatTransaksi.form" Component_="DatabaseConnection.java_2" FileName="RIWAYA~1.FOR|RiwayatTransaksi.form" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\src\MenuTransaksi\RiwayatTransaksi.form" SelfReg="false"/>
+    <ROW File="RiwayatTransaksi.java" Component_="DatabaseConnection.java_2" FileName="RIWAYA~1.JAV|RiwayatTransaksi.java" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\src\MenuTransaksi\RiwayatTransaksi.java" SelfReg="false"/>
+    <ROW File="RiwayatTransaksiMan.form" Component_="DatabaseConnection.java_2" FileName="RIWAYA~2.FOR|RiwayatTransaksiMan.form" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\src\MenuTransaksi\RiwayatTransaksiMan.form" SelfReg="false"/>
+    <ROW File="RiwayatTransaksiMan.java" Component_="DatabaseConnection.java_2" FileName="RIWAYA~2.JAV|RiwayatTransaksiMan.java" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\src\MenuTransaksi\RiwayatTransaksiMan.java" SelfReg="false"/>
+    <ROW File="DashboardAdmin.form" Component_="DashboardAdmin.form" FileName="DASHBO~1.FOR|DashboardAdmin.form" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\src\Restoran_BIRRD\DashboardAdmin.form" SelfReg="false"/>
+    <ROW File="DashboardAdmin.java" Component_="DashboardAdmin.form" FileName="DASHBO~1.JAV|DashboardAdmin.java" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\src\Restoran_BIRRD\DashboardAdmin.java" SelfReg="false"/>
+    <ROW File="DashboardKasir.form" Component_="DashboardAdmin.form" FileName="DASHBO~2.FOR|DashboardKasir.form" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\src\Restoran_BIRRD\DashboardKasir.form" SelfReg="false"/>
+    <ROW File="DashboardKasir.java" Component_="DashboardAdmin.form" FileName="DASHBO~2.JAV|DashboardKasir.java" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\src\Restoran_BIRRD\DashboardKasir.java" SelfReg="false"/>
+    <ROW File="DashboardManajer.form" Component_="DashboardAdmin.form" FileName="DASHBO~3.FOR|DashboardManajer.form" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\src\Restoran_BIRRD\DashboardManajer.form" SelfReg="false"/>
+    <ROW File="DashboardManajer.java" Component_="DashboardAdmin.form" FileName="DASHBO~3.JAV|DashboardManajer.java" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\src\Restoran_BIRRD\DashboardManajer.java" SelfReg="false"/>
+    <ROW File="DatabaseConnection.java_3" Component_="DashboardAdmin.form" FileName="DATABA~1.JAV|DatabaseConnection.java" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\src\Restoran_BIRRD\DatabaseConnection.java" SelfReg="false"/>
+    <ROW File="HashUtil.java" Component_="DashboardAdmin.form" FileName="HASHUT~1.JAV|HashUtil.java" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\src\Restoran_BIRRD\HashUtil.java" SelfReg="false"/>
+    <ROW File="Login.form" Component_="DashboardAdmin.form" FileName="LOGIN~1.FOR|Login.form" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\src\Restoran_BIRRD\Login.form" SelfReg="false"/>
+    <ROW File="Login.java" Component_="DashboardAdmin.form" FileName="LOGIN~1.JAV|Login.java" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\src\Restoran_BIRRD\Login.java" SelfReg="false"/>
+    <ROW File="RestoranBIRR.java" Component_="DashboardAdmin.form" FileName="RESTOR~1.JAV|RestoranBIRR.java" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\src\Restoran_BIRRD\RestoranBIRR.java" SelfReg="false"/>
+    <ROW File="RestoranBIRRD.exe" Component_="RestoranBIRRD.exe" FileName="RESTOR~1.EXE|Restoran BIRRD.exe" Version="65535.65535.65535.65535" Attributes="0" SourcePath="&lt;AI_STUBS_64&gt;aijclw.exe" SelfReg="false"/>
+    <ROW File="swinglayout1.0.4.jar" Component_="swinglayout1.0.4.jar" FileName="SWING-~1.JAR|swing-layout-1.0.4.jar" Version="65535.65535.65535.65535" Attributes="0" SourcePath="lib\swing-layout-1.0.4.jar" SelfReg="false"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BootstrOptComponent">
+    <ROW BootstrOptKey="GlobalOptions" DownloadFolder="[AppDataFolder][|Manufacturer]\[|ProductName]\prerequisites" Options="2"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BuildComponent">
+    <ROW BuildKey="DefaultBuild" BuildName="DefaultBuild" BuildOrder="1" BuildType="0" Languages="en" InstallationType="4" UseLargeSchema="true"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.DictionaryComponent">
+    <ROW Path="&lt;AI_DICTS&gt;ui.ail"/>
+    <ROW Path="&lt;AI_DICTS&gt;ui_en.ail"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.FragmentComponent">
+    <ROW Fragment="CommonUI.aip" Path="&lt;AI_FRAGS&gt;CommonUI.aip"/>
+    <ROW Fragment="FolderDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\FolderDlg.aip"/>
+    <ROW Fragment="MaintenanceTypeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\MaintenanceTypeDlg.aip"/>
+    <ROW Fragment="MaintenanceWelcomeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\MaintenanceWelcomeDlg.aip"/>
+    <ROW Fragment="SequenceDialogs.aip" Path="&lt;AI_THEMES&gt;classic\fragments\SequenceDialogs.aip"/>
+    <ROW Fragment="Sequences.aip" Path="&lt;AI_FRAGS&gt;Sequences.aip"/>
+    <ROW Fragment="StaticUIStrings.aip" Path="&lt;AI_FRAGS&gt;StaticUIStrings.aip"/>
+    <ROW Fragment="Themes.aip" Path="&lt;AI_FRAGS&gt;Themes.aip"/>
+    <ROW Fragment="UI.aip" Path="&lt;AI_THEMES&gt;classic\fragments\UI.aip"/>
+    <ROW Fragment="Validation.aip" Path="&lt;AI_FRAGS&gt;Validation.aip"/>
+    <ROW Fragment="VerifyRemoveDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\VerifyRemoveDlg.aip"/>
+    <ROW Fragment="VerifyRepairDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\VerifyRepairDlg.aip"/>
+    <ROW Fragment="WelcomeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\WelcomeDlg.aip"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiBinaryComponent">
+    <ROW Name="ShortcutFlags.dll" SourcePath="&lt;AI_CUSTACTS&gt;ShortcutFlags.dll"/>
+    <ROW Name="aicustact.dll" SourcePath="&lt;AI_CUSTACTS&gt;aicustact.dll"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlEventComponent">
+    <ROW Dialog_="WelcomeDlg" Control_="Next" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="FolderDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="FolderDlg" Control_="Back" Event="NewDialog" Argument="WelcomeDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_INSTALL" Ordering="197"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control_="Next" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="99"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_MAINT" Ordering="101"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_MAINT" Ordering="198"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="202"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="ChangeButton" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="501"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceWelcomeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RemoveButton" Event="NewDialog" Argument="VerifyRemoveDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="601"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RepairButton" Event="NewDialog" Argument="VerifyRepairDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="601"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="1"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Repair" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="399" Options="1"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Remove" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="299" Options="1"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_PATCH" Ordering="201"/>
+    <ROW Dialog_="ResumeDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_RESUME" Ordering="299"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_PATCH" Ordering="199"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="PatchWelcomeDlg" Condition="AI_PATCH" Ordering="203"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCreateFolderComponent">
+    <ROW Directory_="APPDIR" Component_="APPDIR" ManualDelete="true"/>
+    <ROW Directory_="SHORTCUTDIR" Component_="SHORTCUTDIR" ManualDelete="false"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCustActComponent">
+    <ROW Action="AI_ApplyShortcutFlags" Type="3073" Source="ShortcutFlags.dll" Target="UpdateShortcutFlags" WithoutSeq="true"/>
+    <ROW Action="AI_DOWNGRADE" Type="19" Target="4010"/>
+    <ROW Action="AI_DpiContentScale" Type="1" Source="aicustact.dll" Target="DpiContentScale"/>
+    <ROW Action="AI_EnableDebugLog" Type="321" Source="aicustact.dll" Target="EnableDebugLog"/>
+    <ROW Action="AI_InstallModeCheck" Type="1" Source="aicustact.dll" Target="UpdateInstallMode" WithoutSeq="true"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Type="65" Source="aicustact.dll" Target="PrepareUpgrade"/>
+    <ROW Action="AI_PRESERVE_INSTALL_TYPE" Type="65" Source="aicustact.dll" Target="PreserveInstallType"/>
+    <ROW Action="AI_PinShortcuts" Type="1" Source="ShortcutFlags.dll" Target="PinShortcuts"/>
+    <ROW Action="AI_PinToStartScreen" Type="1025" Source="ShortcutFlags.dll" Target="PinToStartScreen" WithoutSeq="true"/>
+    <ROW Action="AI_PinToTaskbar" Type="1025" Source="ShortcutFlags.dll" Target="PinToTaskbar" WithoutSeq="true"/>
+    <ROW Action="AI_PrepareShortcutFlags" Type="1" Source="ShortcutFlags.dll" Target="PrepareActionData"/>
+    <ROW Action="AI_RESTORE_LOCATION" Type="65" Source="aicustact.dll" Target="RestoreLocation"/>
+    <ROW Action="AI_ResolveKnownFolders" Type="1" Source="aicustact.dll" Target="AI_ResolveKnownFolders"/>
+    <ROW Action="AI_SHOW_LOG" Type="65" Source="aicustact.dll" Target="LaunchLogFile" WithoutSeq="true"/>
+    <ROW Action="AI_STORE_LOCATION" Type="51" Source="ARPINSTALLLOCATION" Target="[APPDIR]"/>
+    <ROW Action="AI_UnpinFromStartScreen" Type="1025" Source="ShortcutFlags.dll" Target="UnpinFromStartScreen" WithoutSeq="true"/>
+    <ROW Action="AI_UnpinFromTaskbar" Type="1025" Source="ShortcutFlags.dll" Target="UnpinFromTaskbar" WithoutSeq="true"/>
+    <ROW Action="AI_UnpinShortcuts" Type="1" Source="ShortcutFlags.dll" Target="UnpinShortcuts"/>
+    <ROW Action="SET_APPDIR" Type="307" Source="APPDIR" Target="[ProgramFilesFolder][Manufacturer]\[ProductName]"/>
+    <ROW Action="SET_SHORTCUTDIR" Type="307" Source="SHORTCUTDIR" Target="[ProgramMenuFolder][ProductName]"/>
+    <ROW Action="SET_TARGETDIR_TO_APPDIR" Type="51" Source="TARGETDIR" Target="[APPDIR]"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatCompsComponent">
+    <ROW Feature_="MainFeature" Component_="APPDIR"/>
+    <ROW Feature_="MainFeature" Component_="ProductInformation"/>
+    <ROW Feature_="MainFeature" Component_="builtjar.properties"/>
+    <ROW Feature_="MainFeature" Component_="DatabaseConnection.class"/>
+    <ROW Feature_="MainFeature" Component_="DatabaseConnection.class_1"/>
+    <ROW Feature_="MainFeature" Component_="DatabaseConnection.class_2"/>
+    <ROW Feature_="MainFeature" Component_="DashboardAdmin1.class"/>
+    <ROW Feature_="MainFeature" Component_="build.xml"/>
+    <ROW Feature_="MainFeature" Component_="BIRRDManajemenSistem.jar"/>
+    <ROW Feature_="MainFeature" Component_="commonsbeanutils1.8.2.jar"/>
+    <ROW Feature_="MainFeature" Component_="buildimpl.xml"/>
+    <ROW Feature_="MainFeature" Component_="config.properties"/>
+    <ROW Feature_="MainFeature" Component_="DatabaseConnection.java"/>
+    <ROW Feature_="MainFeature" Component_="DatabaseConnection.java_1"/>
+    <ROW Feature_="MainFeature" Component_="DatabaseConnection.java_2"/>
+    <ROW Feature_="MainFeature" Component_="DashboardAdmin.form"/>
+    <ROW Feature_="MainFeature" Component_="RestoranBIRRD.exe"/>
+    <ROW Feature_="MainFeature" Component_="SHORTCUTDIR"/>
+    <ROW Feature_="MainFeature" Component_="swinglayout1.0.4.jar"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiIniFileComponent">
+    <ROW IniFile="ApplicationType" FileName="RESTOR~1.INI|Restoran BIRRD.ini" DirProperty="APPDIR" Section="Application" Key="Application Type" Value="gui" Action="0" Component_="RestoranBIRRD.exe"/>
+    <ROW IniFile="ClassPath" FileName="RESTOR~1.INI|Restoran BIRRD.ini" DirProperty="APPDIR" Section="Class Path" Key="Class Path" Value="[BIRRManajemenSistem_Dir];[#commonsbeanutils1.8.2.jar];[#commonscollections3.2.1.jar];[#commonsdigester2.1.jar];[#commonslogging1.1.jar];[#groovyall2.0.1.jar];[#iText2.1.7.js2.jar];[#jasperreports5.6.0.jar];[#jasperreportsfonts5.6.0.jar];[#jcalendar1.3.2.jar];[#jcalendar1.3.2.jar.zip];[#mysqlconnectorj9.3.0.jar];[#mysqlconnectorjava5.1.23bin.jar];[#orgjdesktoplayout.jar];" Action="0" Component_="RestoranBIRRD.exe"/>
+    <ROW IniFile="EmbeddedJar" FileName="RESTOR~1.INI|Restoran BIRRD.ini" DirProperty="APPDIR" Section="Application" Key="Embedded Jar" Value="yes" Action="0" Component_="RestoranBIRRD.exe"/>
+    <ROW IniFile="FailureCheck" FileName="RESTOR~1.INI|Restoran BIRRD.ini" DirProperty="APPDIR" Section="Application" Key="Failure Check" Value="yes" Action="0" Component_="RestoranBIRRD.exe"/>
+    <ROW IniFile="MainClass" FileName="RESTOR~1.INI|Restoran BIRRD.ini" DirProperty="APPDIR" Section="Java Runtime Environment" Key="Main Class" Value="Restoran_BIRRD.Login" Action="0" Component_="RestoranBIRRD.exe"/>
+    <ROW IniFile="MaximumVersion" FileName="RESTOR~1.INI|Restoran BIRRD.ini" DirProperty="APPDIR" Section="Java Runtime Environment" Key="Maximum Version" Value="any" Action="0" Component_="RestoranBIRRD.exe"/>
+    <ROW IniFile="MinimumVersion" FileName="RESTOR~1.INI|Restoran BIRRD.ini" DirProperty="APPDIR" Section="Java Runtime Environment" Key="Minimum Version" Value="any" Action="0" Component_="RestoranBIRRD.exe"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstExSeqComponent">
+    <ROW Action="AI_DOWNGRADE" Condition="AI_NEWERPRODUCTFOUND AND (UILevel &lt;&gt; 5)" Sequence="210"/>
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_STORE_LOCATION" Condition="(Not Installed) OR REINSTALL" Sequence="1501"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Condition="AI_UPGRADE=&quot;No&quot; AND (Not Installed)" Sequence="1399"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="52"/>
+    <ROW Action="AI_EnableDebugLog" Sequence="51"/>
+    <ROW Action="AI_PrepareShortcutFlags" Condition="(VersionNT &gt; 501) AND ((NOT Installed) OR (Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;)))" Sequence="4501"/>
+    <ROW Action="AI_PinShortcuts" Condition="(VersionNT &gt; 600) AND ((NOT Installed) OR (Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;)))" Sequence="6499"/>
+    <ROW Action="AI_UnpinShortcuts" Condition="(VersionNT &gt; 600) AND (REMOVE = &quot;ALL&quot;)" Sequence="3199"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstallUISequenceComponent">
+    <ROW Action="AI_PRESERVE_INSTALL_TYPE" Sequence="199"/>
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="53"/>
+    <ROW Action="AI_DpiContentScale" Sequence="52"/>
+    <ROW Action="AI_EnableDebugLog" Sequence="51"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiJavaComponent">
+    <ROW Name="Restoran BIRRD.exe" Launcher="RestoranBIRRD.exe" MainClass="MainClass" ClassPath="ClassPath" JREMin="MinimumVersion" JREMax="MaximumVersion" AppType="ApplicationType" PlusList="APPDIR;" MinusList="#RestoranBIRRD.exe;" MacDescription="[|CurrentJavaProductName] [|ProductVersion] © [|Manufacturer], Inc, 2025" MacBundleId="com.[|Manufacturer].[|ProductName].[|CurrentJavaProductName]" FailureCheck="FailureCheck" UACExecutionLevel="0" Platform64="true" EmbJarPath="BIRRDManajemenSistem.jar" HasEmbJar="EmbeddedJar"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiLaunchConditionsComponent">
+    <ROW Condition="((VersionNT &lt;&gt; 501) AND (VersionNT &lt;&gt; 502))" Description="[ProductName] cannot be installed on [WindowsTypeNT5XDisplay]." DescriptionLocId="AI.LaunchCondition.NoNT5X" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT &lt;&gt; 400)" Description="[ProductName] cannot be installed on [WindowsTypeNT40Display]." DescriptionLocId="AI.LaunchCondition.NoNT40" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT &lt;&gt; 500)" Description="[ProductName] cannot be installed on [WindowsTypeNT50Display]." DescriptionLocId="AI.LaunchCondition.NoNT50" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT &lt;&gt; 600)" Description="[ProductName] cannot be installed on [WindowsTypeNT60Display]." DescriptionLocId="AI.LaunchCondition.NoNT60" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="VersionNT" Description="[ProductName] cannot be installed on [WindowsType9XDisplay]." DescriptionLocId="AI.LaunchCondition.No9X" IsPredefined="true" Builds="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiRegsComponent">
+    <ROW Registry="Manufacturer" Root="-1" Key="Software\[Manufacturer]" Name="\"/>
+    <ROW Registry="Path" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Path" Value="[APPDIR]" Component_="ProductInformation"/>
+    <ROW Registry="ProductName" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="\"/>
+    <ROW Registry="Software" Root="-1" Key="Software" Name="\"/>
+    <ROW Registry="Version" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Version" Value="[ProductVersion]" Component_="ProductInformation"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiShortsComponent">
+    <ROW Shortcut="RestoranBIRRD" Directory_="SHORTCUTDIR" Name="RESTOR~1|Restoran BIRRD" Component_="RestoranBIRRD.exe" Target="[#RestoranBIRRD.exe]" Description="[|CurrentJavaProductName] [|ProductVersion] © [|Manufacturer], Inc, 2025" Hotkey="0" IconIndex="0" ShowCmd="1" CustomFlags="1"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiThemeComponent">
+    <ATTRIBUTE name="UsedTheme" value="classic"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiUpgradeComponent">
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="0.0.1" VersionMax="[|ProductVersion]" Attributes="257" ActionProperty="OLDPRODUCTS"/>
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="[|ProductVersion]" Attributes="2" ActionProperty="AI_NEWERPRODUCTFOUND"/>
+  </COMPONENT>
+</DOCUMENT>
